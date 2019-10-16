@@ -1,9 +1,22 @@
-import "./styles.css";
+class Ahraaar{
+  constructor(){
+    this.name= 'Ahraar';
+  }
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+  sayHello(){
+    const times = 3;
+    const hiWord = 'Hey';
+    let hiPhrase = "";
+
+    for(let i = 0;i<times;i++){
+hiPhrase = hiWord
+    }
+
+    return hiPhrase +" I Am "+ this.name;
+  }
+
+}
+
+const instance = new Ahraaar();
+
+document.getElementById("app").innerHTML = instance.sayHello();
